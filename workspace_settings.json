@@ -1,0 +1,22 @@
+{
+    "terminal.integrated.inheritEnv": false,
+    "launch": {
+        "configurations": []
+    },
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": true,
+    "python.linting.flake8Path": "/home/shankar/miniconda3/bin/flake8",
+    "python.sortImports.args": [
+        "-rc",
+        "--atomic"
+    ],
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+    },
+    "python.formatting.provider": "black",
+    "python.formatting.blackPath": "/home/shankar/miniconda3/bin/black",
+    "python.formatting.blackArgs": [
+        "--line-length",
+        "79"
+    ]
+}
