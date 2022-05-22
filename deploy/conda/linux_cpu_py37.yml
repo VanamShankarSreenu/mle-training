@@ -1,0 +1,10 @@
+name: mlenv
+channels:
+  - defaults
+dependencies:
+  - pytest
+  - sphinx
+  - pandas
+  - scikit-learn
+  - python=3.9
+prefix: /home/shankar_sreenu/miniconda3/envs/mlenv
