@@ -1,0 +1,15 @@
+FROM continuumio/miniconda3
+
+LABEL maintainer="Shankar Sreenu"
+
+COPY conda/linux_cpu_py37.yml env.yml
+
+RUN conda env create -n housing -f env.yml
+
+RUN git clone https://github.com/VanamShankarSreenu/mle_training
+
+RUN cd  mle_training\
+    && pip install . \
+    && pytest
+
+CMD ["/bin/bash"]
